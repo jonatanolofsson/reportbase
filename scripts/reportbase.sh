@@ -14,12 +14,12 @@
 #~ You should have received a copy of the GNU General Public License
 #~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#~ This software is provided by Jonatan Olofsson [jonatan.olofsson@gmail.com]
+#~ This software is provided by Jonatan Olofsson [jonatan.olofsson, gmail]
 
 SKELDIR="/etc/reportbase/skel"
 INDEXFILE="Report.tex"
 MKMATLAB=0
-MATLAB="matlab"
+MATLAB="matlab -r"
 GENERATE_SCRIPT="generate_report_x"
 
 
@@ -49,12 +49,12 @@ function rename {
 }
 
 function help {
-  echo "Valid commands are: init, add [chapter(s)], generate and rename [old new]"
+  echo "Valid commands are: init, add [chapter(s)], generate and rename [old_name new_name]"
   echo "Valid flags for the add command are"
   echo " -a   Adds following chapters as appendices. Resets m-flag to off."
   echo " -m   Toggles between creating matlab directories or not. By default off"
   echo ""
-  echo "reportbase is made by Jonatan Olofsson"
+  echo "reportbase is made by Jonatan Olofsson [jonatan.olofsson, gmail]"
 }
 
 if [ ! -e $INDEXFILE ] && [ $1 != "init" ] ; then
