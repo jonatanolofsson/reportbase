@@ -1,0 +1,16 @@
+reportbase
+-------------------------------------------------------------
+This script was released under GPL license spring 2011 and is as such
+free to use but without guarantees of support. See file COPYING for more
+information on GPL.
+
+Best regards,
+Jonatan Olofsson
+[jonatan.olofsson, gmail]
+-------------------------------------------------------------
+
+1) Installation
+The script can be installed by running
+$ make install
+as root. This will move the files to /etc/reportbase and create a
+/usr/bin/reportbase symlink to the program.
