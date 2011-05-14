@@ -27,11 +27,12 @@ function make_chapter {
   if [ ! -e "$1" ]
   then
     mkdir "$1" "$1/figures"
-    sed "s/::name::/$1/g" $SKELDIR/chapter.tex > "$1/$1.tex"
+    NAME=`echo "$1"|sed -r 's/(^.| .)/\U&/g'`
+    sed -e "s/::name::/$1/g" -e "s/::fullname::/$NAME/g" $SKELDIR/chapter.tex > "$1/$1.tex"
   fi
   if [ $MKMATLAB -eq 1 ]; then
     mkdir "$1/matlab"
-    sed "s/::name::/$1/g" $SKELDIR/chapter.m > "$1/matlab/$1.m"
+    sed "s/::name::/$NAME/g" $SKELDIR/chapter.m > "$1/matlab/$1.m"
   fi
 }
 

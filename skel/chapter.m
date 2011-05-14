@@ -1,1 +1,1 @@
-%% Matlab script for chapter ::name::
+%% Matlab script for chapter ::fullname::
