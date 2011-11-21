@@ -16,7 +16,7 @@
 
 #~ This software is provided by Jonatan Olofsson [jonatan.olofsson, gmail]
 
-SKELDIR="/etc/reportbase/skel"
+SKELDIR="/opt/reportbase/skel"
 INDEXFILE="Report.tex"
 MKMATLAB=0
 MATLAB="matlab -r"

@@ -1,10 +1,10 @@
 \newcommand{\currentchapter}{}
-\newcommand{\fig}[4]{
+\newcommand{\fig}[4][]{%
   \begin{figure}[h]
     \centering
-    \includegraphics[width=1\linewidth]{\currentchapter/figures/#1}
-    \caption{#2}
-    \label{#3}
+    \includegraphics[width=#1\linewidth]{\currentchapter/figures/#2}
+    \caption{#3}
+    \label{#4}
   \end{figure}
 }
 
@@ -16,6 +16,7 @@
 \newcommand{\newchapter}[1]{
 	\renewcommand{\currentchapter}{#1}
 	\include*{#1/#1}
+    \clearpage
 }
 
 \newcommand{\matlab}{\textsc{Matlab}}
