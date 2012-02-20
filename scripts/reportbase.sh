@@ -19,7 +19,7 @@
 SKELDIR="/opt/reportbase/skel"
 INDEXFILE="Report.tex"
 MKMATLAB=0
-MATLAB="matlab -r"
+MATLAB="matlab"
 GENERATE_SCRIPT="generate_report_x"
 
 
