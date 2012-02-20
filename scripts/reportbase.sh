@@ -58,7 +58,7 @@ function help {
   echo "reportbase is made by Jonatan Olofsson [jonatan.olofsson, gmail]"
 }
 
-if [ ! -e $INDEXFILE ] && [ $1 != "init" ] ; then
+if [ ! -e $INDEXFILE ] && [ "x$1" != "xinit" ] ; then
   echo "Indexfile '$INDEXFILE' could not be located. Either you're in the wrong directory, or it is not yet initialised with 'reportbase init'"
   exit 1
 fi
